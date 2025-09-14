@@ -44,7 +44,7 @@ export default function Inicio(){
                 <div className="relative overflow-hidden">
                   <img 
                     className="w-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                    src="/aleInsta.jpg" 
+                    src="./aleInsta.jpg" 
                     alt="Alê Xavier Instagram" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-pink-600/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -73,7 +73,7 @@ export default function Inicio(){
                 <div className="relative overflow-hidden">
                   <img 
                     className="w-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                    src="/luanaInsta.jpg" 
+                    src="./luanaInsta.jpg" 
                     alt="Luana Maluf Instagram" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-teal-600/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -94,7 +94,7 @@ export default function Inicio(){
             </div>
           </div>
 
-          {/* Contact Section */}
+          {/* Contact */}
           <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 lg:p-12 border border-white/50">
             <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Fale com a gente
@@ -149,72 +149,6 @@ export default function Inicio(){
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 text-center">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid md:grid-cols-4 gap-12">
-            {/* Brand */}
-            <div className="md:col-span-1">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-teal-500 rounded-2xl flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-xl">PB</span>
-                </div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-teal-400 bg-clip-text text-transparent">
-                  Passa Bola
-                </span>
-              </div>
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                Promovendo o futebol feminino com conteúdo informativo e descontraído desde 2021.
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-pink-600 rounded-full flex items-center justify-center transition-colors duration-300">
-                  <span className="text-xl">📘</span>
-                </a>
-                <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-pink-600 rounded-full flex items-center justify-center transition-colors duration-300">
-                  <span className="text-xl">📷</span>
-                </a>
-                <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-teal-600 rounded-full flex items-center justify-center transition-colors duration-300">
-                  <span className="text-xl">🐦</span>
-                </a>
-                <a href="#" className="w-10 h-10 bg-gray-700 hover:bg-pink-600 rounded-full flex items-center justify-center transition-colors duration-300">
-                  <span className="text-xl">📺</span>
-                </a>
-              </div>
-            </div>
-
-            {/* Conteúdo */}
-            <div>
-              <h3 className="text-xl font-bold mb-6 text-teal-400">Conteúdo</h3>
-              <ul className="space-y-3 text-gray-300">
-                <li><a href="#" className="hover:text-teal-400 transition-colors duration-300">Notícias</a></li>
-                <li><a href="#" className="hover:text-teal-400 transition-colors duration-300">Entrevistas</a></li>
-                <li><a href="#" className="hover:text-teal-400 transition-colors duration-300">Análises</a></li>
-                <li><a href="#" className="hover:text-teal-400 transition-colors duration-300">Estatísticas</a></li>
-              </ul>
-            </div>
-
-            {/* Sobre */}
-            <div>
-              <h3 className="text-xl font-bold mb-6 text-purple-400">Sobre</h3>
-              <ul className="space-y-3 text-gray-300">
-                <li><a href="#" className="hover:text-purple-400 transition-colors duration-300">Nossa História</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition-colors duration-300">Equipe</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition-colors duration-300">Contato</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition-colors duration-300">Parcerias</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-700 mt-12 pt-8 text-center">
-            <p className="text-gray-400">
-              &copy; 2025 Passa Bola. Todos os direitos reservados. Feito com 
-              <span className="text-pink-500 mx-1">❤️</span>
-              para o futebol feminino.
-            </p>
-          </div>
-        </div>
-      </footer>
     </>
   )
 }
