@@ -99,7 +99,7 @@ export default function Inicio() {
                 <div className="relative overflow-hidden ">
                   <img 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                    src={import.meta.env.BASE_URL+"/aleInsta.jpg"} 
+                    src="/aleInsta.jpg"
                     alt="Alê Xavier Instagram" 
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all duration-300"></div>
@@ -127,7 +127,7 @@ export default function Inicio() {
                 <div className="relative overflow-hidden ">
                   <img 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                    src={import.meta.env.BASE_URL +"/luanaInsta.jpg" }
+                    src="/luanaInsta.jpg"
                     alt="Luana Maluf Instagram" 
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all duration-300"></div>

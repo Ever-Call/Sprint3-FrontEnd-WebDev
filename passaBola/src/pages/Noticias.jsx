@@ -10,7 +10,7 @@ export default function Noticias() {
 
   // Carregar JSON
   useEffect(() => {
-    fetch(import.meta.env.BASE_URL + "/data.json") //import.meta.env.BASE_URL serve para pegar a base url do projeto, assim não ocorrendo erro de rota
+    fetch("/data.json") //import.meta.env.BASE_URL serve para pegar a base url do projeto, assim não ocorrendo erro de rota; eu retirei depois, mudei o vite.config.js para base: '/'
       .then((res) => res.json())
       .then((data) => setArticles(data))
       .catch((err) => console.error(err));
