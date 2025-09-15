@@ -11,6 +11,7 @@
 ---
 
 ### 🔗 Deploy (GitHub Pages): [https://ever-call.github.io/Sprint3-FrontEnd-WebDev/#]
+### 🔗 Deploy (vercel): [https://sprint3-front-end-web-dev.vercel.app]
 
 ---
 
