@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "titulo": "Corinthians vence Cruzeiro e conquista o hepta do Brasileirão Feminino",
+    "texto": "O Corinthians venceu o Cruzeiro por 1 a 0 e garantiu o sétimo título do Campeonato Brasileiro Feminino, sendo o sexto consecutivo. As Brabas do Timão se consolidam ainda mais como as maiores vencedoras da competição desde 2013.",
+    "resumo":"O Corinthians venceu o Cruzeiro por 1 a 0 e garantiu o sétimo título do Campeonato Brasileiro Feminino...",
+    "url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2025-09/corinthians-vence-cruzeiro-e-conquista-o-hepta-do-brasileirao-feminino"
+  },
+  {
+    "id": 2,
+    "titulo": "Corinthians conquista 7º título do Brasileirão Feminino; veja todos os campeões",
+    "texto": "Após empate no jogo de ida da final, o Corinthians venceu o Cruzeiro por 1 a 0 em São Paulo e isolou-se ainda mais no número de títulos do Brasileiro Feminino. Também se classificou para a Supercopa do Brasil de 2026.",
+    "resumo":"Após empate no jogo de ida da final, o Corinthians venceu o Cruzeiro por 1 a 0 em São Paulo...",
+    "url": "https://ge.globo.com/mg/triangulo-mineiro/futebol/futebol-feminino/brasileiro-feminino/noticia/2025/09/14/corinthians-conquista-7o-titulo-do-brasileirao-feminino-veja-todos-os-campeoes.ghtml"
+  },
+  {
+    "id": 3,
+    "titulo": "Brazil clinches ninth Women's Copa America title in shootout win over Colombia",
+    "texto": "Brazil venceu a Colômbia nos pênaltis por 5-4 após empate por 4-4 no tempo extra, conquistando o nono título da Copa América Feminina. Marta marcou dois gols decisivos, um no fim do tempo regular e outro na prorrogação, além de uma atuação marcante da goleira Lorena nas penalidades.",
+    "resumo":"Brazil venceu a Colômbia nos pênaltis por 5-4 após empate por 4-4 no tempo extra, conquistando o nono título da Copa América Feminina...",
+    "url": "https://www.reuters.com/sports/soccer/brazil-beat-colombia-penalty-shootout-win-womens-copa-america-soccer-title-2025-08-03/"
+  },
+  {
+    "id": 4,
+    "titulo": "Marta weighs motherhood against 2027 World Cup dream",
+    "texto": "Marta, com 39 anos, disse que ainda não decidiu se jogará a Copa do Mundo Feminina de 2027, considerando sua vontade de ser mãe. Ela continua sendo peça importante tanto no clube quanto na seleção brasileira.",
+    "resumo":"Marta, com 39 anos, disse que ainda não decidiu se jogará a Copa do Mundo Feminina de 2027, considerando sua vontade de ser mãe...",
+    "url": "https://sports.yahoo.com/article/brazil-marta-says-2027-world-203102573.html"
+  },
+  {
+    "id": 5,
+    "titulo": "Defending champion Brazil’s dominant first half secures spot in Copa America Femenina final",
+    "texto": "O Brasil teve um primeiro tempo dominante contra o Uruguai, marcou três gols cedo e venceu por 5-1, garantindo vaga na final da Copa América Feminina. Marta marcou de pênalti, Amanda Gutierres contribuiu com gols, e a equipe se mostrou forte em todas as linhas.",
+    "resumo":"O Brasil teve um primeiro tempo dominante contra o Uruguai, marcou três gols cedo e venceu por 5-1, garantindo vaga na final da Copa América Feminina...",
+    "url": "https://apnews.com/article/copa-america-femenina-brazil-uruguay-colombia-560e3744797d72db3910fc65b0024c57"
+  },
+  {
+    "id": 6,
+    "titulo": "Marta started in Brazil’s Copa América opener, then sat in big win over Bolivia",
+    "texto": "Marta iniciou a partida de abertura da Copa América Feminina como titular no jogo contra a Venezuela, depois saiu do banco para contribuir em uma vitória de 6-0 sobre a Bolívia. Ela afirmou que aceitará qualquer papel que for dado a ela, pois há um grande talento jovem na seleção brasileira.",
+    "resumo":"Marta iniciou a partida de abertura da Copa América Feminina como titular no jogo contra a Venezuela...",
+    "url": "https://apnews.com/article/marta-brazil-copa-america-femenina-6b6983384148f9342fe3b8b4d605e40b"
+  }
+]

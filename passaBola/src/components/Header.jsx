@@ -10,7 +10,7 @@ export default function Header({ user, onLogout }) {
     <header className="h-13 w-full bg-pink-400 text-gray-50 text-xl fixed top-0 left-0 z-50 shadow-xl">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/inicio" className="font-bold">⚽Passa Bola</Link>
+        <Link to="/inicio" className="font-bold">⚽Passa a Bola</Link>
 
         {/* Botão menu hambúrguer - padrão: mobile */}
         <button
@@ -22,10 +22,10 @@ export default function Header({ user, onLogout }) {
 
         {/* Navegação desktop (escondida por padrão, visível só em md+) */}
         <nav className="hidden md:flex gap-6 items-center">
-          <Link to="/inicio" className="hover:text-pink-600 hover:border-b-2 hover:border-pink-600">Início</Link>
-          <Link to="/noticias" className="hover:text-pink-600 hover:border-b-2 hover:border-pink-600">Notícias</Link>
-          <Link to="/copa" className="hover:text-pink-600 hover:border-b-2 hover:border-pink-600">Copa</Link>
-          <Link to="/gerenciarTime" className="hover:text-pink-600 hover:border-b-2 hover:border-pink-600">Gerenciar Time</Link>
+          <Link to="/inicio" className="hover:text-pink-200 hover:border-b-2 hover:border-pink-200">Início</Link>
+          <Link to="/noticias" className="hover:text-pink-200 hover:border-b-2 hover:border-pink-200">Notícias</Link>
+          <Link to="/copa" className="hover:text-pink-200 hover:border-b-2 hover:border-pink-200">Copa</Link>
+          <Link to="/gerenciador" className="hover:text-pink-200 hover:border-b-2 hover:border-pink-200">Gerenciador</Link>
         </nav>
 
         {/* Perfil do usuário */}
@@ -46,6 +46,7 @@ export default function Header({ user, onLogout }) {
                 <p className="font-medium">{user.name}</p>
                 <p className="text-xs text-gray-500">{user.email}</p>
               </div>
+              <Link to="/perfil" className="w-full text-left px-4">Ver Perfil</Link>
               <button
                 onClick={() => {
                   onLogout();
@@ -66,7 +67,7 @@ export default function Header({ user, onLogout }) {
           <Link to="/inicio" onClick={() => setOpen(false)} className="hover:text-pink-600">Início</Link>
           <Link to="/noticias" onClick={() => setOpen(false)} className="hover:text-pink-600">Notícias</Link>
           <Link to="/copa" onClick={() => setOpen(false)} className="hover:text-pink-600">Copa</Link>
-          <Link to="/gerenciarTime" onClick={() => setOpen(false)} className="hover:text-pink-600">Gerenciar Time</Link>
+          <Link to="/gerenciador" onClick={() => setOpen(false)} className="hover:text-pink-600">Gerenciar Time</Link>
           
           {/* Perfil mobile */}
           <div className="border-t border-pink-300 pt-4 mt-2">

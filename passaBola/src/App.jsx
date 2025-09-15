@@ -3,22 +3,37 @@ import { useState } from "react";
 import RootLayout from "./pages/RootLayout";
 import Noticias from "./pages/Noticias";
 import Copa from "./pages/Copa";
-import GerenciarTime from "./pages/GerenciarTime";
+import Gerenciador from "./pages/Gerenciador";
 import Inicio from "./pages/Inicio";
 import Perfil from "./pages/Perfil";
-import Login from "./pages/Login";
+import Entrar from "./pages/Entrar";
 
 export default function App() {
   const [user, setUser] = useState(null);
+  const[users, setUsers]=useState([
+    {email:"ana@gmail.com",name:"ana", password:"123"},
+    {email:"bruno@gmail.com",name:"bruno", password:"123"},
+    {email:"carlos@gmail.com",name:"carlos", password:"123"}
+  ])
 
   const handleLogin = (email, password) => {
-    // Validação simples
-    if (email && password.length >= 3) {
+    if((users.find((user)=>user.email===email && user.password===password))){
       setUser({ email, name: email.split('@')[0] });
       return true;
     }
     return false;
   };
+  
+  const handleRegister = (email, password) => {
+    if(!(users.find((user)=>user.email===email))){
+      const name = email.split('@')[0];
+      const newUser = { email: email, name: name, password: password };
+      setUsers([...users, newUser]);
+      setUser({ email: email, name: name});
+      return true;
+    }
+    return false;
+  }
 
   const handleLogout = () => {
     setUser(null);
@@ -26,7 +41,7 @@ export default function App() {
 
   // Se não estiver logado, mostra tela de login
   if (!user) {
-    return <Login onLogin={handleLogin} />;
+    return <Entrar onLogin={handleLogin} onRegister={handleRegister} />;
   }
 
   // Se estiver logado, mostra a aplicação
@@ -37,7 +52,7 @@ export default function App() {
         <Route path="inicio" element={<Inicio />} />
         <Route path="noticias" element={<Noticias />} />
         <Route path="copa" element={<Copa />} />
-        <Route path="gerenciarTime" element={<GerenciarTime />} />
+        <Route path="gerenciador" element={<Gerenciador />} />
         <Route path="perfil" element={<Perfil user={user} />} />
       </Route>
     </Routes>

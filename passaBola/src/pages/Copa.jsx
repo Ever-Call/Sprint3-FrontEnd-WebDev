@@ -256,7 +256,7 @@ export default function App() {
   const [aba, setAba] = useState("tabela");
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6 mt-15">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
       {/* Botões */}
       <div className="flex gap-4 mb-8">
         <button

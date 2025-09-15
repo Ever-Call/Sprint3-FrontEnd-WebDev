@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function GerenciadorDePartidas() {
+export default function Gerenciador() {
   const [numJogadores, setNumJogadores] = useState("");
   const [jogadores, setJogadores] = useState([]);
   const [data, setData] = useState("");
@@ -38,7 +38,7 @@ export default function GerenciadorDePartidas() {
   };
 
   return (
-    <div className="bg-white shadow-2xl rounded-2xl p-6 w-full max-w-3xl mx-auto relative mt-20">
+    <div className="bg-white shadow-2xl rounded-2xl p-6 w-full max-w-3xl mx-auto relative ">
       <h1 className="text-3xl font-bold mb-6 text-pink-600 text-center">
         Gerenciador de Partidas ⚽
       </h1>
@@ -102,7 +102,7 @@ export default function GerenciadorDePartidas() {
 
       <button
         onClick={handleSalvarPartida}
-        className="bg-pink-400 text-white px-6 py-3 rounded-xl shadow hover:bg-green-600 transition mb-8 w-full"
+        className="bg-pink-400 text-white px-6 py-3 rounded-xl shadow hover:bg-pink-600 transition mb-8 w-full"
       >
         Salvar Partida
       </button>
