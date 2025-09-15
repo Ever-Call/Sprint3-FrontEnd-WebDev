@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Gerenciador() {
   const [numJogadores, setNumJogadores] = useState("");
@@ -51,7 +51,7 @@ export default function Gerenciador() {
             type="number"
             value={numJogadores}
             onChange={(e) => setNumJogadores(e.target.value)}
-            className="border p-2 rounded-lg flex-1"
+            className="border p-2 rounded-lg w-full"
           />
           <button
             onClick={handleSetNumJogadores}

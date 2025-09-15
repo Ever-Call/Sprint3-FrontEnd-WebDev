@@ -89,7 +89,7 @@ export default function Noticias() {
               ))
             ) : (
               <div className="col-span-full flex flex-col items-center justify-center py-16 text-gray-500">
-                <div className="animate-spin w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full mb-4"></div>
+                <div className="animate-spin w-8 h-8 border-2 border-pink-500 border-t-transparent rounded-full mb-4"></div>
                 <p className="text-lg">Carregando notícias...</p>
               </div>
             )}
@@ -125,7 +125,7 @@ export default function Noticias() {
                       href={selectedArticle.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-pink-600 text-white px-6 py-3 rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+                      className="inline-flex items-center gap-2 bg-pink-600 text-white px-6 py-3 rounded-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
                     >
                       <span>Ler notícia completa</span>
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -163,7 +163,7 @@ export default function Noticias() {
                       placeholder="Digite o título da notícia..."
                       value={newTitle}
                       onChange={(e) => setNewTitle(e.target.value)}
-                      className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors outline-none"
+                      className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors outline-none"
                     />
                   </div>
                   
@@ -174,7 +174,7 @@ export default function Noticias() {
                       value={newContent}
                       onChange={(e) => setNewContent(e.target.value)}
                       rows={6}
-                      className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors outline-none resize-none"
+                      className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors outline-none resize-none"
                     />
                   </div>
                   
@@ -185,14 +185,14 @@ export default function Noticias() {
                       placeholder="https://exemplo.com/noticia"
                       value={newUrl}
                       onChange={(e) => setNewUrl(e.target.value)}
-                      className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors outline-none"
+                      className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors outline-none"
                     />
                   </div>
                 </div>
                 
                 <div className="flex gap-4 mt-8">
                   <button
-                    className="flex-1 bg-pink-600 text-white px-6 py-3 rounded-xl hover:from-green-600 hover:to-green-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 font-semibold"
+                    className="flex-1 bg-pink-600 text-white px-6 py-3 rounded-xl hover:bg-pink-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 font-semibold"
                     onClick={handleAddArticle}
                     disabled={!newTitle || !newContent}
                   >

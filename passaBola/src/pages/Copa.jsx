@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function PassaBola() {
   // Lista inicial de jogos
-  const [jogos, setJogos] = useState([
+  const jogos =[
     {
       id: 1,
       timeA: "Time A",
@@ -36,7 +36,7 @@ function PassaBola() {
       golsA: 1,
       golsB: 0,
     },
-  ]);
+  ]
 
   // Função que calcula classificação com base nos resultados
   const calcularClassificacao = () => {
@@ -139,11 +139,6 @@ function PassaBola() {
             </tbody>
           </table>
         </div>
-
-        {/* --- Botão --- */}
-        <button className="w-full mt-6 bg-pink-500 text-white font-semibold py-3 rounded-full shadow hover:bg-pink-600 transition">
-          Inscrever Time
-        </button>
       </div>
     </div>
   );
@@ -156,33 +151,29 @@ function TabelaCampeonato() {
   const [erro, setErro] = useState(null);
 
   useEffect(() => {
-    async function buscarTabela() {
-      try {
-        const url =
-          "https://v3.football.api-sports.io/standings?league=74&season=2023";
+    const url = "https://v3.football.api-sports.io/standings?league=74&season=2023";
+    const key = "51dbb7d7a84baf534ad4eb057b227fcf"
 
-        const myHeaders = new Headers();
-        myHeaders.append("x-rapidapi-key", "51dbb7d7a84baf534ad4eb057b227fcf");
-        myHeaders.append("x-rapidapi-host", "v3.football.api-sports.io");
-
-        const resp = await fetch(url, {
-          method: "GET",
-          headers: myHeaders,
-        });
-        console.log(resp);
-        if (!resp.ok) throw new Error("Erro na requisição: " + resp.status);
-
-        const dados = await resp.json();
-        const tabela = dados.response?.[0]?.league?.standings?.[0] || [];
+    fetch(url, {
+      method: "GET",
+      headers: {
+        "x-rapidapi-key": key,
+        "x-rapidapi-host": "v3.football.api-sports.io",
+      }})
+      .then((resp) => {
+        if (!resp.ok) {
+          throw new Error("Erro na requisição: " + resp.status);
+        }
+        return resp.json();
+      })
+      .then((dados) => {
+        const tabela = dados.response?.[0]?.league?.standings?.[0] || []; // ? evite que o codigo quebre se algum dado estiver indefinido
         setTimes(tabela);
-      } catch (err) {
-        setErro(err.message);
-      } finally {
-        setLoading(false);
-      }
-    }
-    buscarTabela();
+      })
+      .catch((err) => setErro(err.message))
+      .finally(() => setLoading(false));
   }, []);
+
 
   if (loading) return <p className="text-center mt-10">Carregando tabela...</p>;
   if (erro) return <p className="text-red-500 text-center">{erro}</p>;
@@ -252,7 +243,7 @@ function TabelaCampeonato() {
 }
 
 // --- COMPONENTE PRINCIPAL ---
-export default function App() {
+export default function Copa() {
   const [aba, setAba] = useState("tabela");
 
   return (

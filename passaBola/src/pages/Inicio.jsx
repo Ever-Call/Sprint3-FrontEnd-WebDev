@@ -1,17 +1,13 @@
 import { useState } from 'react';
 
 export default function Inicio() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState({ });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e) => {
-    setFormData({...formData,[e.target.id]: e.target.value
-    });
+    setFormData({...formData,[e.target.id]: e.target.value});//eu pego o id do input e o conteudo dentro do elemento, e adiciono ao formData. basicamente posso dizer, depois da virgula, [e.target.id]: e.target.value adiciona ou sobrescreve um campo
+    console.log(formData)
   };
 
   const handleSubmit = (ev) => {
@@ -109,7 +105,7 @@ export default function Inicio() {
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all duration-300"></div>
                 </div>
                 
-                <div className="p-2 text-center">
+                <div className="p-6 text-center">
                   <h3 className="font-bold text-2xl text-gray-800 mb-2">
                     Alê Xavier
                   </h3>
