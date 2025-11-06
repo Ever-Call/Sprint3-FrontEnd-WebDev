@@ -7,10 +7,12 @@ import Gerenciador from "./pages/Gerenciador";
 import Inicio from "./pages/Inicio";
 import Perfil from "./pages/Perfil";
 import Entrar from "./pages/Entrar";
+import Loja from "./pages/Loja";
 
 export default function App() {
   const [user, setUser] = useState(null);
   const[users, setUsers]=useState([
+    // Usuários de exemplo
     {email:"ana@gmail.com",name:"ana", password:"123"},
     {email:"bruno@gmail.com",name:"bruno", password:"123"},
     {email:"carlos@gmail.com",name:"carlos", password:"123"}
@@ -41,19 +43,24 @@ export default function App() {
 
   // Se não estiver logado, mostra tela de login
   if (!user) {
+    console.log("Não logado");
     return <Entrar onLogin={handleLogin} onRegister={handleRegister} />;
+  }else{
+    console.log("Logado como:", user);      
   }
+
 
   // Se estiver logado, mostra a aplicação
   return (
     <Routes>
-      <Route path="/" element={<RootLayout user={user} onLogout={handleLogout} />}>
+      <Route path="/" element={<RootLayout/>}>
         <Route index element={<Navigate to="/inicio" replace />} />
-        <Route path="inicio" element={<Inicio />} />
-        <Route path="noticias" element={<Noticias />} />
-        <Route path="copa" element={<Copa />} />
-        <Route path="gerenciador" element={<Gerenciador />} />
-        <Route path="perfil" element={<Perfil user={user} />} />
+        <Route path="/inicio" element={<Inicio />} />
+        <Route path="/noticias" element={<Noticias />} />
+        <Route path="/copa" element={<Copa />} />
+        <Route path="/gerenciador" element={<Gerenciador />} />
+        <Route path="/perfil" element={<Perfil user={user} onLogout={handleLogout} />} />
+        <Route path="/loja" element={<Loja />} />
       </Route>
     </Routes>
   );

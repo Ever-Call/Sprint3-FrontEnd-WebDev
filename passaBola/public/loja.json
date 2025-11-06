@@ -1,0 +1,352 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camisa Oficial Seleção Feminina Brasil 2025",
+      "preco": 349.90,
+      "categoria": "camisas",
+      "estoque": 25,
+      "imagens": [
+        "https://www.futebolreligiao.com.br/image/cache/catalog/Brasil/camisa-feminina-ii-selecao-do-brasil-2025-away-900x900.jpg"
+      ],
+      "detalhes": {
+        "descricao": "Camisa oficial da Seleção Brasileira Feminina — modelo 2025, tecido respirável e tecnologia Dri-Fit.",
+        "material": "100% poliéster reciclado",
+        "tamanhos": ["P", "M", "G", "GG"],
+        "marca": "Nike",
+        "lançamento": "2025-04-10"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Chuteira Nike Phantom Luna II Pro Feminina",
+      "preco": 799.90,
+      "categoria": "chuteiras",
+      "estoque": 12,
+      "imagens": [
+        "https://images.prodirectsport.com/ProductImages/Main/1015922_Main_1774524.jpg"
+      ],
+      "detalhes": {
+        "descricao": "Desenvolvida para performance e conforto, com design exclusivo para atletas mulheres.",
+        "material": "Sintético premium",
+        "tamanhos": [35, 36, 37, 38, 39, 40],
+        "marca": "Nike",
+        "lançamento": "2025-03-05"
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Bola Oficial Copa Feminina 2025",
+      "preco": 449.00,
+      "categoria": "bolas",
+      "estoque": 30,
+      "imagens": [
+        "https://static.netshoes.com.br/produtos/bola-de-futebol-copa-do-mundo-feminina-adidas-oceaunz-league/86/FB8-5254-086/FB8-5254-086_zoom1.jpg?ts=1695701395"
+      ],
+      "detalhes": {
+        "descricao": "Bola oficial da Copa Feminina 2025 — desenvolvida com tecnologia de precisão e controle de voo.",
+        "material": "Poliuretano texturizado",
+        "peso": "410g",
+        "marca": "Adidas",
+        "lançamento": "2025-06-01"
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Moletom Feminino Futebol É Delas",
+      "preco": 229.90,
+      "categoria": "roupas",
+      "estoque": 15,
+      "imagens": [
+        "https://cdn.awsli.com.br/500x500/1823/1823476/produto/85582864/753e7462c1.jpg"
+      ],
+      "detalhes": {
+        "descricao": "Moletom estiloso e confortável com estampa exclusiva ‘Futebol é Delas’.",
+        "material": "Algodão e poliéster",
+        "tamanhos": ["P", "M", "G"],
+        "marca": "DelasWear",
+        "lançamento": "2025-02-20"
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Boné Feminino Futebol Sem Limites",
+      "preco": 99.90,
+      "categoria": "acessórios",
+      "estoque": 50,
+      "imagens": [
+        "https://static.ativaesportes.com.br/public/ativaesportes/imagens/produtos/bone-adidas-based-class-trefoil-unissex-ib9971-64eaf56e2a48c.jpg"
+      ],
+      "detalhes": {
+        "descricao": "Boné casual com design moderno e mensagem de empoderamento.",
+        "material": "Sarja",
+        "ajuste": "Traseiro com fivela",
+        "marca": "Adidas",
+        "lançamento": "2025-01-15"
+      }
+    },
+
+    {
+      "id": 6,
+      "nome": "Kit Treino Feminino Seleção 2025",
+      "preco": 299.90,
+      "categoria": "roupas",
+      "estoque": 20,
+      "imagens": [
+        "https://dcdn-us.mitiendanube.com/stores/002/822/115/products/4c440365-144f-481e-bf36-54ea473e45211-43272f9d822ebce67e16755314011356-1024-1024.webp"
+      ],
+      "detalhes": {
+        "descricao": "Conjunto de calça e jaqueta de treino da seleção feminina – tecido leve e respirável.",
+        "material": "Poliéster leve",
+        "tamanhos": ["P", "M", "G", "GG"],
+        "marca": "Nike",
+        "lançamento": "2025-05-10"
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Caneleira Feminina Pro Light",
+      "preco": 119.90,
+      "categoria": "acessórios",
+      "estoque": 35,
+      "imagens": [
+        "https://ph-cdn3.ecosweb.com.br/imagens01/foto/mkp146/moda-fitness/acessorios/caneleira-puma-ultra-light-ankle_2395674_1000_1.jpg"
+      ],
+      "detalhes": {
+        "descricao": "Caneleira de proteção ultraleve para futebol feminino – design anatômico.",
+        "material": "Plástico reforçado + EVA",
+        "tamanhos": ["S", "M", "L"],
+        "marca": "Puma",
+        "lançamento": "2025-04-01"
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Meio-campo Feminino Gola Polo",
+      "preco": 149.90,
+      "categoria": "roupas",
+      "estoque": 40,
+      "imagens": [
+        "https://images.tcdn.com.br/img/img_prod/213069/camisa_polo_feminina_do_sao_paulo_sp99009v_8998_1_bb655fbb50d8efde50ac572b7497f5d5.jpg"
+      ],
+      "detalhes": {
+        "material": "Algodão premium",
+        "descricao": "Camisa polo casual com temática de futebol para torcedoras – usado fora de campo.",
+        "tamanhos": ["P", "M", "G"],
+        "marca": "Reebok",
+        "lançamento": "2025-03-20"
+      }
+    },
+    {
+      "id": 9,
+      "nome": "Shorts Feminino Jogo Rápido",
+      "preco": 129.90,
+      "categoria": "roupas",
+      "estoque": 45,
+      "imagens": [
+        "https://static.allianzparqueshop.com.br/produtos/calcao-adidas-tiro-essentials-feminino/34/FB8-4297-234/FB8-4297-234_zoom1.jpg?ts=1760032731&ims=1088x"
+      ],
+      "detalhes": {
+        "material": "Poliéster leve",
+        "descricao": "Shorts estilo jogadora, com costuras reforçadas e corte ergonômico.",
+        "tamanhos": ["P", "M", "G", "GG"],
+        "marca": "Adidas",
+        "lançamento": "2025-03-30"
+      }
+    },
+    {
+      "id": 10,
+      "nome": "Meia Alta Feminina Futebol Power",
+      "preco": 69.90,
+      "categoria": "acessórios",
+      "estoque": 60,
+      "imagens": [
+        "https://images.tcdn.com.br/img/img_prod/468236/meia_alta_compressao_cano_alto_esportiva_atividade_fisica_lupo_1804_1_20250918014021.jpg"
+      ],
+      "detalhes": {
+        "material": "Poliamida + elastano",
+        "descricao": "Meia alta com amortecimento reforçado para jogadoras – design especial para futebol feminino.",
+        "tamanhos": ["35-38", "39-42"],
+        "marca": "EliteFeet",
+        "lançamento": "2025-02-25"
+      }
+    },
+    {
+      "id": 11,
+      "nome": "Camisa Reserva Seleção Feminina Brasil 2025",
+      "preco": 349.90,
+      "categoria": "camisas",
+      "estoque": 18,
+      "imagens": [
+        "https://www.futebolreligiao.com.br/image/cache/catalog/Brasil/camisa-feminina-i-selecao-do-brasil-2025-home-900x900.jpg"
+      ],
+      "detalhes": {
+        "material": "100% poliéster reciclado",
+        "descricao": "Camisa reserva da Seleção Brasileira Feminina – edição 2025, azul-escuro com detalhes em amarelo.",
+        "tamanhos": ["P", "M", "G", "GG"],
+        "marca": "Nike",
+        "lançamento": "2025-04-10"
+      }
+    },
+    {
+      "id": 12,
+      "nome": "Chuteira Futsal Feminina",
+      "preco": 499.90,
+      "categoria": "chuteiras",
+      "estoque": 14,
+      "imagens": [
+        "https://images.tcdn.com.br/img/img_prod/311840/chuteira_umbro_fifty_iii_futsal_feminina_rosa_e_azul_80257_4_20201201084711.jpg"
+      ],
+      "detalhes": {
+        "material": "Sintético + borracha antideslizante",
+        "descricao": "Chuteira de futsal para mulheres, sola especial para quadra, estilo arrojado.",
+        "tamanhos": [35, 36, 37, 38, 39],
+        "marca": "Puma",
+        "lançamento": "2025-03-15"
+      }
+    },
+    {
+      "id": 13,
+      "nome": "Bola Treino",
+      "preco": 249.00,
+      "categoria": "bolas",
+      "estoque": 40,
+      "imagens": [
+        "https://static.allianzparqueshop.com.br/produtos/bola-nike-cbf-strike-society/14/JD8-6882-014/JD8-6882-014_zoom1.jpg?ts=1714990952&ims=544x"
+      ],
+      "detalhes": {
+        "material": "PU texturizado",
+        "descricao": "Bola de treino avançada, design feminino com cores exclusivas, para treino diário.",
+        "peso": "410g",
+        "marca": "Nike",
+        "lançamento": "2025-02-10"
+      }
+    },
+    {
+      "id": 14,
+      "nome": "Regata Feminina Botafogo Casual",
+      "preco": 119.90,
+      "categoria": "roupas",
+      "estoque": 50,
+      "imagens": [
+        "https://imgcentauro-a.akamaihd.net/336x229/M17STU02A1.jpg?v=0"
+      ],
+      "detalhes": {
+        "material": "Algodão orgânico",
+        "descricao": "Regata casual para torcedoras no dia de jogo – leve e estilosa.",
+        "tamanhos": ["P", "M", "G"],
+        "marca": "FanWear",
+        "lançamento": "2025-04-05"
+      }
+    },
+    {
+      "id": 15,
+      "nome": "Mochila Feminina Futebol Power Pack",
+      "preco": 189.90,
+      "categoria": "acessórios",
+      "estoque": 22,
+      "imagens": [
+        "https://static.allianzparqueshop.com.br/produtos/mochila-adidas-power-vii-26l/06/FB9-3725-306/FB9-3725-306_zoom3.jpg?ts=1761592466"
+      ],
+      "detalhes": {
+        "material": "Poliéster 600D",
+        "descricao": "Mochila temática futebol feminino – compartimentos para chuteira, bola e cores exclusivas.",
+        "capacidade": "30L",
+        "marca": "Adidas",
+        "lançamento": "2025-05-01"
+      }
+    },
+    {
+      "id": 16,
+      "nome": "Top Feminino Treino Liberdade",
+      "preco": 89.90,
+      "categoria": "roupas",
+      "estoque": 55,
+      "imagens": [
+        "data:image/jpeg;base64,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"
+      ],
+      "detalhes": {
+        "material": "Poliamida e elastano",
+        "descricao": "Top esportivo para treino, com alças finas e tema ‘Liberdade’ – inspirado no futebol feminino.",
+        "tamanhos": ["P", "M", "G"],
+        "marca": "Adidas",
+        "lançamento": "2025-04-15"
+      }
+    },
+    {
+      "id": 17,
+      "nome": "Faixa de Capitã Feminina PowerBand",
+      "preco": 49.90,
+      "categoria": "acessórios",
+      "estoque": 80,
+      "imagens": [
+        "https://http2.mlstatic.com/D_NQ_NP_788665-MLB91194328257_082025-O.webp"
+      ],
+      "detalhes": {
+        "material": "Nylon elástico",
+        "descricao": "Faixa de capitã femininas reutilizável – fixação por velcro e design “We Lead”.",
+        "ajuste": "Tamanhos únicos",
+        "marca": "LeadHer",
+        "lançamento": "2025-03-10"
+      }
+    },
+    {
+      "id": 18,
+      "nome": "Luvas Goleira Femininas GripMax",
+      "preco": 239.90,
+      "categoria": "acessórios",
+      "estoque": 10,
+      "imagens": [
+        "https://http2.mlstatic.com/D_NQ_NP_684028-MLB77665498391_072024-O-luva-goleiro-profissional-guardian-grip-pro-personalizaco.webp"
+      ],
+      "detalhes": {
+        "material": "Látex premium",
+        "descricao": "Luvas profissionais para goleiras – grip reforçado e corte anatômico para bola feminina.",
+        "tamanhos": ["6", "7", "8", "9"],
+        "marca": "GoalQueen",
+        "lançamento": "2025-02-28"
+      }
+    },
+    {
+      "id": 19,
+      "nome": "Camiseta Fan Clube Feminino Edition",
+      "preco": 159.90,
+      "categoria": "roupas",
+      "estoque": 30,
+      "imagens": [
+        "https://wbl.blob.core.windows.net/img/sku/135/113428/1-camisa-futebol-feminina-asas-501x678mm-em-tecido-dry-fit-4x0-impressao-ultra-hd-sublimatica-tamanho-m-costura-gola-redonda_113428.png"
+      ],
+      "detalhes": {
+        "material": "Algodão 100%",
+        "descricao": "Camiseta casual edição limitada – estampa com jogadoras da seleção feminina brasileira.",
+        "tamanhos": ["P", "M", "G", "GG"],
+        "marca": "SupportHer",
+        "lançamento": "2025-03-25"
+      }
+    },
+    {
+      "id": 20,
+      "nome": "Headband Feminina Futebol StayFit",
+      "preco": 39.90,
+      "categoria": "acessórios",
+      "estoque": 75,
+      "imagens": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQat6ktC95UtBX5gPlS4Rz8pjG54oEnyjV3s8UQLUhmF_Dj1mCEwIpxWiYwvKkesGbInec&usqp=CAU"
+      ],
+      "detalhes": {
+        "material": "Microfibra e silicone antiderrapante",
+        "descricao": "Faixa / headband para treino e jogo, com tema futebol feminino – mantém o cabelo no lugar e adiciona estilo.",
+        "tamanhos": ["Único"],
+        "marca": "ActiveHer",
+        "lançamento": "2025-04-20"
+      }
+    }
+  ],
+  "categorias": [
+    { "id": 1, "nome": "Camisas" },
+    { "id": 2, "nome": "Chuteiras" },
+    { "id": 3, "nome": "Bolas" },
+    { "id": 4, "nome": "Roupas" },
+    { "id": 5, "nome": "Acessórios" }
+  ]
+}

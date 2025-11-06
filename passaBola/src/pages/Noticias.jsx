@@ -10,7 +10,7 @@ export default function Noticias() {
 
   // Carregar JSON
   useEffect(() => {
-    fetch("/data.json") //import.meta.env.BASE_URL serve para pegar a base url do projeto, assim não ocorrendo erro de rota; eu retirei depois, mudei o vite.config.js para base: '/'
+    fetch(`${import.meta.env.BASE_URL}data.json`) //import.meta.env.BASE_URL serve para pegar a base url do projeto, assim não ocorrendo erro de rota; eu retirei depois, mudei o vite.config.js para base: '/'
       .then((res) => res.json())
       .then((data) => setArticles(data))
       .catch((err) => console.error(err));
@@ -37,7 +37,7 @@ export default function Noticias() {
   };
 
   return (
-    <div className=" p-6">
+    <div className="p-6">
       <div className="max-w-7xl mx-auto">
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8">
           {/* Header com gradiente */}
@@ -50,7 +50,7 @@ export default function Noticias() {
 
           {/* Botão de criar notícia com hover animado */}
           <button
-            className="group relative bg-pink-600 text-white px-6 py-3 rounded-xl mb-8 transition-all duration-300 hover:from-blue-600 hover:to-blue-700 hover:shadow-lg hover:-translate-y-0.5 active:scale-95"
+            className="bg-pink-600 text-white px-6 py-3 rounded-xl mb-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-95"
             onClick={() => setCreateArticle(true)}
           >
             <span className="flex items-center gap-2">
