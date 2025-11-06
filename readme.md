@@ -11,7 +11,8 @@
 ---
 
 ### 🔗 Deploy (GitHub Pages): [https://ever-call.github.io/Sprint3-FrontEnd-WebDev/#]
-### 🔗 Deploy (vercel): [https://sprint3-front-end-web-dev.vercel.app]
+### 🔗 Deploy (Vercel): [https://sprint3-front-end-web-dev.vercel.app]
+### 🔗 Repositório (github): [https://github.com/Ever-Call/Sprint3-FrontEnd-WebDev]
 
 ---
 
@@ -23,8 +24,8 @@ Passa a Bola é um canal digital criado em 2021 por Alê Xavier Luana Maluf para
 # APIs usados:
 ## API-FOOTBAL
 URL Base: https://v3.football.api-sports.io \
-URL com endpoint e parâmetros: https://v3.football.api-sports.io/standings?league=74&season=2023\
-Endpoint: /standings\
+URL com endpoint e parâmetros: https://v3.football.api-sports.io/standings?league=74&season=2023 \
+Endpoint: /standings \
 Método HTTP: GET
 ### Autenticação:
 A API requer a autenticação através de API Keys (chaves de API) incluídas nos cabeçalhos da requisição HTTP. A API KEY utilizada é "51dbb7d7a84baf534ad4eb057b227fcf".
