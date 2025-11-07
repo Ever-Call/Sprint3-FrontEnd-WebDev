@@ -15,14 +15,14 @@ export default function Gerenciador() {
 
   const handleSetNumJogadores = () => {
     let n = parseInt(numJogadores);
-    if (isNaN(n) || n <= 0) return;
+    if (isNaN(n) || n <= 0) return window.alert("Insira um número válido de jogadores.");
 
     if (n % 2 !== 0) n++;
     setJogadores(Array(n).fill(""));
   };
 
   const handleSalvarPartida = () => {
-    if (!data || !hora || jogadores.length === 0) return;
+    if (!data || !hora || jogadores.length === 0) return window.alert("Preencha todos os campos antes de salvar a partida.");
 
     const novaPartida = {
       data,
@@ -56,7 +56,7 @@ export default function Gerenciador() {
             />
             <button
               onClick={handleSetNumJogadores}
-              className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition"
+              className="cursor-pointer bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition"
             >
               Definir
             </button>
@@ -103,7 +103,7 @@ export default function Gerenciador() {
 
         <button
           onClick={handleSalvarPartida}
-          className="bg-pink-400 text-white px-6 py-3 rounded-xl shadow hover:bg-pink-600 transition mb-8 w-full"
+          className="cursor-pointer bg-pink-500 text-white px-6 py-3 rounded-xl shadow hover:bg-pink-700 transition mb-8 w-full"
         >
           Salvar Partida
         </button>

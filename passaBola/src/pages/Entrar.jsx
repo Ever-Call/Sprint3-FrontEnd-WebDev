@@ -132,7 +132,7 @@ export default function Entrar({ onLogin, onRegister }) {
             className={`w-full font-bold text-lg py-4 px-8 rounded-2xl transition-all duration-300 shadow-xl flex items-center justify-center gap-3 ${
               isLoading 
                 ? 'bg-gray-400 cursor-not-allowed' 
-                : 'bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transform hover:scale-[1.02] active:scale-[0.98] hover:shadow-2xl'
+                : 'bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transform hover:scale-[1.02] active:scale-[0.98] hover:shadow-2xl cursor-pointer'
             } text-white`}
           >
             {isLoading ? (
@@ -165,7 +165,7 @@ export default function Entrar({ onLogin, onRegister }) {
               setIsRegister(!isRegister);
               setError("");
             }}
-            className="text-gray-600 hover:text-pink-600 font-semibold transition-colors group"
+            className="text-gray-600 hover:text-pink-600 font-semibold transition-colors group cursor-pointer"
           >
             {isRegister ? (
               <span className="flex items-center justify-center gap-2">

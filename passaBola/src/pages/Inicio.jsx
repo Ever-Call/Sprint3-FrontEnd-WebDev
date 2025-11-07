@@ -265,7 +265,7 @@ export default function Inicio() {
                             href={founder.instagramUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-gray-600 hover:text-pink-600 transition-colors text-sm"
+                            className="cursor-pointer inline-flex items-center gap-1 text-gray-600 hover:text-pink-600 transition-colors text-sm"
                           >
                             <Instagram className="w-4 h-4" />
                             {founder.instagram}
@@ -296,7 +296,7 @@ export default function Inicio() {
 
                     <button
                       onClick={() => window.open(founder.instagramUrl, '_blank')}
-                      className={`w-full py-4 bg-gradient-to-r ${founder.color === 'pink' ? 'from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700' : 'from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700'} text-white font-semibold transition-all duration-300 flex items-center justify-center gap-2`}
+                      className={`cursor-pointer w-full py-4 bg-gradient-to-r ${founder.color === 'pink' ? 'from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700' : 'from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700'} text-white font-semibold transition-all duration-300 flex items-center justify-center gap-2`}
                     >
                       <Instagram className="w-5 h-5" />
                       <span>Seguir no Instagram</span>
@@ -308,7 +308,7 @@ export default function Inicio() {
           </div>
 
           {/* Contact Section */}
-          <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-10 lg:p-16 border border-white/50">
+          <form onSubmit={handleSubmit} className="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-10 lg:p-16 border border-white/50">
             <div className="text-center mb-12">              
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
                 Fale com a Gente
@@ -317,7 +317,7 @@ export default function Inicio() {
               <p className="text-gray-600 mt-6 text-lg">Estamos ansiosas para ouvir você! 💜</p>
             </div>
             
-            <div onSubmit={handleSubmit} className="max-w-2xl mx-auto">
+            <div className="max-w-2xl mx-auto">
               <div className="space-y-6">
                 <div className="group">
                   <label className="text-sm font-bold text-gray-700 mb-3 flex items-center gap-2">
@@ -331,6 +331,7 @@ export default function Inicio() {
                     onChange={handleInputChange}
                     className="w-full px-6 py-4 border-2 border-gray-200 rounded-2xl focus:border-pink-500 focus:ring-4 focus:ring-pink-100 transition-all outline-none bg-gray-50 focus:bg-white text-lg"
                     placeholder="Digite seu nome completo"
+                    required
                   />
                 </div>
                 
@@ -346,6 +347,7 @@ export default function Inicio() {
                     onChange={handleInputChange}
                     className="w-full px-6 py-4 border-2 border-gray-200 rounded-2xl focus:border-purple-500 focus:ring-4 focus:ring-purple-100 transition-all outline-none bg-gray-50 focus:bg-white text-lg"
                     placeholder="seu@email.com"
+                    required
                   />
                 </div>
                 
@@ -361,16 +363,17 @@ export default function Inicio() {
                     onChange={handleInputChange}
                     className="w-full px-6 py-4 border-2 border-gray-200 rounded-2xl focus:border-pink-500 focus:ring-4 focus:ring-pink-100 transition-all outline-none bg-gray-50 focus:bg-white resize-none text-lg"
                     placeholder="Conte pra gente o que você está pensando..."
+                    required
                   ></textarea>
                 </div>
                 
                 <button 
-                  onClick={handleSubmit}
+                  type="submit"
                   disabled={isSubmitting}
                   className={`w-full font-bold text-lg py-5 px-8 rounded-2xl transition-all duration-300 shadow-xl ${
                     isSubmitting 
                       ? 'bg-gray-400 cursor-not-allowed' 
-                      : 'bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transform hover:scale-[1.02] active:scale-[0.98] hover:shadow-2xl'
+                      : 'cursor-pointer bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transform hover:scale-[1.02] active:scale-[0.98] hover:shadow-2xl'
                   } text-white`}
                 >
                   {isSubmitting ? (
@@ -387,7 +390,7 @@ export default function Inicio() {
                 </button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </section>
     </div>

@@ -85,7 +85,7 @@ export default function Loja() {
             {/* Botão do Carrinho */}
             <button
               onClick={() => setShowCart(true)}
-              className="w-full md:w-auto mt-5 md:mt-0 relative bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-3 rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2"
+              className="cursor-pointer w-full md:w-auto mt-5 md:mt-0 relative bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-3 rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2"
             >
               <ShoppingCart className="w-5 h-5" />
               <span className="font-semibold">Carrinho</span>
@@ -108,7 +108,7 @@ export default function Loja() {
                 className={`px-6 py-2 rounded-full font-medium transition-all duration-300 capitalize ${
                   selectedCategory === category
                     ? 'bg-gradient-to-r from-pink-600 to-purple-600 text-white shadow-lg scale-105'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    : 'cursor-pointer bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
                 {category}
@@ -175,7 +175,7 @@ export default function Loja() {
                         className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 ${
                           product.estoque === 0
                             ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                            : 'bg-gradient-to-r from-pink-600 to-purple-600 text-white hover:shadow-lg hover:-translate-y-0.5 active:scale-95'
+                            : 'cursor-pointer bg-gradient-to-r from-pink-600 to-purple-600 text-white hover:shadow-lg hover:-translate-y-0.5 active:scale-95'
                         }`}
                       >
                         {product.estoque === 0 ? 'Sem Estoque' : 'Adicionar ao Carrinho'}
@@ -184,7 +184,7 @@ export default function Loja() {
                       <div className="flex items-center justify-between bg-gray-100 rounded-xl p-2">
                         <button
                           onClick={() => updateCart(product, -1)}
-                          className="bg-white text-pink-600 w-10 h-10 rounded-lg hover:bg-pink-100 transition-colors flex items-center justify-center"
+                          className="cursor-pointer bg-white text-pink-600 w-10 h-10 rounded-lg hover:bg-pink-100 transition-colors flex items-center justify-center"
                         >
                           <Minus className="w-5 h-5" />
                         </button>
@@ -195,7 +195,7 @@ export default function Loja() {
                           className={`w-10 h-10 rounded-lg transition-colors flex items-center justify-center ${
                             quantity >= product.estoque
                               ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                              : 'bg-white text-pink-600 hover:bg-pink-100'
+                              : 'cursor-pointer bg-white text-pink-600 hover:bg-pink-100'
                           }`}
                         >
                           <Plus className="w-5 h-5" />
@@ -218,7 +218,7 @@ export default function Loja() {
           <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex justify-center items-center p-4 z-50 animate-in fade-in duration-200">
             <div className="bg-white rounded-3xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative animate-in slide-in-from-bottom-4 duration-300">
               <button
-                className="absolute top-6 right-6 w-10 h-10 bg-red-100 hover:bg-red-200 text-red-600 rounded-full flex items-center justify-center transition-colors z-10 shadow-lg"
+                className="cursor-pointer absolute top-6 right-6 w-10 h-10 bg-red-100 hover:bg-red-200 text-red-600 rounded-full flex items-center justify-center transition-colors z-10 shadow-lg"
                 onClick={() => setSelectedProduct(null)}
               >
                 <X className="w-5 h-5" />
@@ -231,18 +231,6 @@ export default function Loja() {
                     alt={selectedProduct.nome}
                     className="w-full rounded-2xl shadow-lg"
                   />
-                  {selectedProduct.imagens.length > 1 && (
-                    <div className="flex gap-2 mt-4">
-                      {selectedProduct.imagens.slice(1).map((img, idx) => (
-                        <img 
-                          key={idx}
-                          src={img} 
-                          alt={`${selectedProduct.nome} ${idx + 2}`}
-                          className="w-20 h-20 object-cover rounded-lg cursor-pointer hover:opacity-75 transition-opacity"
-                        />
-                      ))}
-                    </div>
-                  )}
                 </div>
                 
                 <div className="lg:w-1/2 mt-6 lg:mt-0">
@@ -291,7 +279,7 @@ export default function Loja() {
                       className={`w-full px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 ${
                         selectedProduct.estoque === 0
                           ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                          : 'bg-gradient-to-r from-pink-600 to-purple-600 text-white hover:shadow-xl hover:-translate-y-1 active:scale-95'
+                          : 'cursor-pointer bg-gradient-to-r from-pink-600 to-purple-600 text-white hover:shadow-xl hover:-translate-y-1 active:scale-95'
                       }`}
                     >
                       {selectedProduct.estoque === 0 ? 'Produto Esgotado' : 'Adicionar ao Carrinho'}
@@ -300,7 +288,7 @@ export default function Loja() {
                     <div className="flex items-center justify-between bg-gray-100 rounded-xl p-4">
                       <button
                         onClick={() => updateCart(selectedProduct, -1)}
-                        className="bg-white text-pink-600 w-12 h-12 rounded-lg hover:bg-pink-100 transition-colors flex items-center justify-center"
+                        className="cursor-pointer bg-white text-pink-600 w-12 h-12 rounded-lg hover:bg-pink-100 transition-colors flex items-center justify-center"
                       >
                         <Minus className="w-6 h-6" />
                       </button>
@@ -311,7 +299,7 @@ export default function Loja() {
                         className={`w-12 h-12 rounded-lg transition-colors flex items-center justify-center ${
                           getCartItemQuantity(selectedProduct.id) >= selectedProduct.estoque
                             ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                            : 'bg-white text-pink-600 hover:bg-pink-100'
+                            : 'cursor-pointer bg-white text-pink-600 hover:bg-pink-100'
                         }`}
                       >
                         <Plus className="w-6 h-6" />
@@ -335,7 +323,7 @@ export default function Loja() {
                   </h2>
                   <button
                     onClick={() => setShowCart(false)}
-                    className="w-10 h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors"
+                    className="cursor-pointer w-10 h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors"
                   >
                     <X className="w-5 h-5" />
                   </button>
@@ -363,7 +351,7 @@ export default function Loja() {
                           <div className="flex items-center gap-2 mt-2">
                             <button
                               onClick={() => updateCart(item.produto, -1)}
-                              className="bg-white w-7 h-7 rounded-lg hover:bg-pink-100 transition-colors flex items-center justify-center"
+                              className="cursor-pointer bg-white w-7 h-7 rounded-lg hover:bg-pink-100 transition-colors flex items-center justify-center"
                             >
                               <Minus className="w-4 h-4" />
                             </button>
@@ -374,14 +362,14 @@ export default function Loja() {
                               className={`w-7 h-7 rounded-lg transition-colors flex items-center justify-center ${
                                 item.qtd >= item.produto.estoque
                                   ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                                  : 'bg-white hover:bg-pink-100'
+                                  : 'cursor-pointer bg-white hover:bg-pink-100'
                               }`}
                             >
                               <Plus className="w-4 h-4" />
                             </button>
                             <button
                               onClick={() => updateCart(item.produto, -item.qtd)}
-                              className="ml-auto bg-red-100 text-red-600 w-7 h-7 rounded-lg hover:bg-red-200 transition-colors flex items-center justify-center"
+                              className="cursor-pointer ml-auto bg-red-100 text-red-600 w-7 h-7 rounded-lg hover:bg-red-200 transition-colors flex items-center justify-center"
                             >
                               <Trash2 className="w-4 h-4" />
                             </button>
@@ -407,13 +395,13 @@ export default function Loja() {
                       clearCart()
                       setShowCart(false)
                     }}
-                    className="w-full bg-gradient-to-r from-pink-600 to-purple-600 text-white py-4 rounded-xl font-semibold text-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 active:scale-95 mb-2"
+                    className="cursor-pointer w-full bg-gradient-to-r from-pink-600 to-purple-600 text-white py-4 rounded-xl font-semibold text-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 active:scale-95 mb-2"
                   >
                     Finalizar Compra
                   </button>
                   <button 
                     onClick={clearCart}
-                    className="w-full bg-gray-100 text-gray-700 py-3 rounded-xl font-medium hover:bg-gray-200 transition-colors"
+                    className="cursor-pointer w-full bg-gray-100 text-gray-700 py-3 rounded-xl font-medium hover:bg-gray-200 transition-colors"
                   >
                     Limpar Carrinho
                   </button>

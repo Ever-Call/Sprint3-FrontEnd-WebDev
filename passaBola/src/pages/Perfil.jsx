@@ -39,7 +39,7 @@ export default function Perfil({user, onLogout }) {
         </div>
 
         <div className="mt-8 space-y-3">
-          <button className="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition-colors"
+          <button className="cursor-pointer w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition-colors"
             onClick={() => onLogout()}
           >
             Sair

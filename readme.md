@@ -10,12 +10,15 @@
 
 ---
 
-### 🔗 Deploy (GitHub Pages): [https://ever-call.github.io/Sprint3-FrontEnd-WebDev/#]
 ### 🔗 Deploy (Vercel): [https://sprint3-front-end-web-dev.vercel.app]
 ### 🔗 Repositório (github): [https://github.com/Ever-Call/Sprint3-FrontEnd-WebDev]
 
 ---
 
+# Sprint 4 - Mudanças:
+Novo design do site, adicionado uma loja usando uma api local 'loja.son' e melhorias em relação ao feedback para o usuário
+
+---
 # ⚽ Passa a Bola
 Passa a Bola é um canal digital criado em 2021 por Alê Xavier Luana Maluf para promover o futebol feminino
 
@@ -38,4 +41,4 @@ O restante da URL "?league=74&season=2023", são parâmetros de consulta e são 
 ### Uso:
 Os dados retornados pela api foram usados para uma exibir tabela do campeonato Brasileirão. Feminino A1 (2023)
 ## API simulado:
-foi simulado fazer uma requisição de api com um arquivo json local que está na pasta "public", e ele retorna notícias sobre o futebol feminino, junto com suas fontes(url).
+Foi simulado uma requisição de api com um arquivo json local 'loja.json' e 'data.json' que está na pasta "public", retorna uma lista de produtos voltado ao publico feminino e outro arquivo json retorna notícias sobre o futebol feminino, junto com suas fontes(url).

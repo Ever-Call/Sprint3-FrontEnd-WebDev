@@ -53,7 +53,7 @@ export default function Noticias() {
             className="bg-pink-600 text-white px-6 py-3 rounded-xl mb-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-95"
             onClick={() => setCreateArticle(true)}
           >
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 cursor-pointer">
               <svg className="w-5 h-5 transition-transform " fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
               </svg>
@@ -101,7 +101,7 @@ export default function Noticias() {
           <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center p-4 z-50 animate-in fade-in duration-200">
             <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative animate-in slide-in-from-bottom-4 duration-300">
               <button
-                className="absolute top-4 right-4 w-8 h-8 bg-red-100 hover:bg-red-200 text-red-600 rounded-full flex items-center justify-center transition-colors z-10"
+                className="cursor-pointer absolute top-4 right-4 w-8 h-8 bg-red-100 hover:bg-red-200 text-red-600 rounded-full flex items-center justify-center transition-colors z-10"
                 onClick={() => setSelectedArticle(null)}
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -141,10 +141,10 @@ export default function Noticias() {
 
         {/* Modal para criar notícia - design aprimorado */}
         {createArticle && (
-          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center p-4 z-50 animate-in fade-in duration-200">
+          <form onSubmit={handleAddArticle} className="fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center p-4 z-50 animate-in fade-in duration-200">
             <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative animate-in slide-in-from-bottom-4 duration-300">
               <button
-                className="absolute top-4 right-4 w-8 h-8 bg-red-100 hover:bg-red-200 text-red-600 rounded-full flex items-center justify-center transition-colors z-10"
+                className="cursor-pointer absolute top-4 right-4 w-8 h-8 bg-red-100 hover:bg-red-200 text-red-600 rounded-full flex items-center justify-center transition-colors z-10"
                 onClick={() => setCreateArticle(false)}
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -164,6 +164,7 @@ export default function Noticias() {
                       value={newTitle}
                       onChange={(e) => setNewTitle(e.target.value)}
                       className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors outline-none"
+                      required
                     />
                   </div>
                   
@@ -175,6 +176,7 @@ export default function Noticias() {
                       onChange={(e) => setNewContent(e.target.value)}
                       rows={6}
                       className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors outline-none resize-none"
+                      required
                     />
                   </div>
                   
@@ -192,14 +194,13 @@ export default function Noticias() {
                 
                 <div className="flex gap-4 mt-8">
                   <button
-                    className="flex-1 bg-pink-600 text-white px-6 py-3 rounded-xl hover:bg-pink-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 font-semibold"
-                    onClick={handleAddArticle}
-                    disabled={!newTitle || !newContent}
+                    type="submit"
+                    className="cursor-pointer flex-1 bg-pink-600 text-white px-6 py-3 rounded-xl hover:bg-pink-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 font-semibold"
                   >
                     Adicionar Notícia
                   </button>
                   <button
-                    className="px-6 py-3 border border-gray-300 text-gray-700 rounded-xl hover:bg-gray-50 transition-colors"
+                    className="cursor-pointer px-6 py-3 border border-gray-300 text-gray-700 rounded-xl hover:bg-gray-50 transition-colors"
                     onClick={() => setCreateArticle(false)}
                   >
                     Cancelar
@@ -207,7 +208,7 @@ export default function Noticias() {
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         )}
       </div>
     </div>

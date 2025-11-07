@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function Footer() {
             <div className="col-start-2 col-end-2">
               <div className="flex items-center space-x-2 mb-6">
                 <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">⚽</span>
+                  <img src="/logo.png" alt="" />
                 </div>
                 <span className="text-2xl font-bold text-pink-400">Passa Bola</span>
               </div>
@@ -19,20 +20,19 @@ export default function Footer() {
             <div className="col-start-3 col-end-3">
               <h3 className="text-lg font-semibold mb-4 text-pink-400">Conteúdo</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-pink-400 transition-colors">Notícias</a></li>
-                <li><a href="#" className="hover:text-pink-400 transition-colors">Copa Passa Bola</a></li>
-                <li><a href="#" className="hover:text-pink-400 transition-colors">Gerenciar Times</a></li>
-                <li><a href="#" className="hover:text-pink-400 transition-colors">Tabelas</a></li>
+                <li><Link to='/inicio'>Inicio</Link></li>
+                <li><Link to='/noticias'>Notícias</Link></li>
+                <li><Link to='/perfil'>Perfil</Link></li>
+                <li><Link to='/copa'>Copa</Link></li>
+                <li><Link to='/gerenciador'>Gerenciador</Link></li>
+                <li><Link to='/loja'>Ver Loja</Link></li>             
               </ul>
             </div>
 
             <div className="col-start-4 col-end-4'">
               <h3 className="text-lg font-semibold mb-4 text-pink-400">Sobre Nós</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-pink-400 transition-colors">Nossa História</a></li>
-                <li><a href="#" className="hover:text-pink-400 transition-colors">Alê Xavier</a></li>
-                <li><a href="#" className="hover:text-pink-400 transition-colors">Luana Maluf</a></li>
-                <li><a href="#" className="hover:text-pink-400 transition-colors">Contato</a></li>
+                <li><Link to='/inicio'>Nossa Historia</Link></li>
               </ul>
             </div>
           </div>
